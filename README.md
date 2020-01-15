@@ -10,9 +10,14 @@ REDTEAM
 
 - Powershell TOOLS
 
-# > pwsh
+```
+
+Linux:
+
+# pwsh
 # PS /redteam> iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/cfalta/PowerShellArmoury/master/New-PSArmoury.ps1')
 # PS /redteam> wget https://raw.githubusercontent.com/cfalta/PowerShellArmoury/master/PSArmoury.json
 
+```
 
 
