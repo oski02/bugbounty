@@ -10,17 +10,17 @@ REDTEAM
 
 - Powershell TOOLS
 
-https://github.com/cfalta/PowerShellArmoury
-
 
 ```
 
 Linux:
 
-# pwsh
-# PS > iex (new-object net.webclient).downloadstring('https://raw.githubusercontent.com/cfalta/PowerShellArmoury/master/New-PSArmoury.ps1')
-# PS > wget https://raw.githubusercontent.com/cfalta/PowerShellArmoury/master/PSArmoury.json
+# git clone https://github.com/cfalta/PowerShellArmoury
 # PS > New-PSArmoury -Password password -Salt salt -Config .\PSArmoury.json
+# PS > Import-Module ./MyArmoury.ps1
+
+
+# PS> Invoke-[TAB]
 
 ```
 
