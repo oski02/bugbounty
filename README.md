@@ -317,9 +317,17 @@ IP (Hostname) | Local.txt Contents | Proof.txt Contents
 192.168.x.x   | hash_here          | hash_here
 192.168.x.x   | hash_here          | hash_here
 
-## Appendix - Metasploit/Meterpreter Usage
+## Appendix - Enumeracion en redes Sociales
 
-For the exam, I used my Metasploit/Meterpreter allowance on the following machine: `192.168.x.x`
+Obtener correos electronicos a través de linkedin
+
+
+```
+
+https://github.com/m8r0wn/CrossLinked
+
+```
+
 
 ## Appendix - Ofuscacion de Powershell
 
