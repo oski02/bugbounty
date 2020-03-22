@@ -356,3 +356,12 @@ while ($true) {
 
 
 ```
+### Enumeración en Directorio Activo
+
+*Enumeracion con Powershell*
+
+```
+
+Get-LocalGroupMember -Group Administrators
+
+```
