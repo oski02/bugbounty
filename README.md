@@ -1,20 +1,4 @@
----
-title: "Manual de Hacking Etico"
-author: ["student@youremailaddress.com", "OSID: XXXX"]
-date: "2017-02-20"
-subject: "Markdown"
-keywords: [Markdown, Example]
-subtitle: "PWK Lab & OSCP Exam"
-lang: "en"
-titlepage: true
-titlepage-color: "1E90FF"
-titlepage-text-color: "FFFAFA"
-titlepage-rule-color: "FFFAFA"
-titlepage-rule-height: 2
-book: true
-classoption: oneside
-code-block-font-size: \scriptsize
----
+
 # Manual de Hacking Etico 
 
 ## Introduction
