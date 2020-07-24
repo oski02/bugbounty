@@ -1,9 +1,9 @@
 
-# Manual de Hacking Etico 
+# BugBounty
 
 ## Introduction
 
-Este manual es recopila la distintas tecnicas actuales de Hacking orientadas principalmente a REDTEAM.
+Este manual es recopila la distintas tecnicas actuales de BugBounty
 
 ## Objective
 
