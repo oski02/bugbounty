@@ -35,7 +35,7 @@ Here you can find links to a bunch of useful tools for Bug Bounty Hunting.
 
 |[pentest-tools](https://github.com/gwen001/pentest-tools)
 |[recon-progile](https://github.com/nahamsec/recon_profile/)
-|[bugbounty-tools].(https://github.com/ethicalhackingplayground/Bug-Bounty-Tools.git)
+
 
 
 ### Recon, OSINT & Discovery
