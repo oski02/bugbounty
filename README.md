@@ -1,6 +1,6 @@
 # Resources-for-Beginner-Bug-Bounty-Hunters
 
-## Tools 🧰
+## Tools 🧰 From: https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters
 
 Here you can find links to a bunch of useful tools for Bug Bounty Hunting.
 
